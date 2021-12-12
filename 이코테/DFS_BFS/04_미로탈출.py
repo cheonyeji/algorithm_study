@@ -10,6 +10,10 @@ n, m = map(int, input().split())
 graph = [list(map(int, input())) for _ in range(n)]
 distance = [[-1] * m for _ in range(n)]  # (sx,sy) <-> (x,y) 거리 계산
 
+# 상 하 좌 우
+dx = [0, 0, -1, 1]
+dy = [-1, 1, 0, 0]
+
 
 def bfs(graph, x, y):
 
@@ -19,6 +23,7 @@ def bfs(graph, x, y):
     while queue:
         x, y = queue.popleft()
 
+        # 코드 고치기 ^^ 77
         if y - 1 >= 0 and graph[x][y - 1] == 1 and distance[x][y - 1] == -1:
             queue.append((x, y - 1))  # 상
             distance[x][y - 1] = distance[x][y] + 1
