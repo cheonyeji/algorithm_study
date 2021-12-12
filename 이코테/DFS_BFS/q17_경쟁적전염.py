@@ -94,7 +94,6 @@ def goVirus(virus):
 
 
 goVirus(virus)
-print(graph)
 
 if graph[x - 1][y - 1] != 0:
     print(graph[x - 1][y - 1])
