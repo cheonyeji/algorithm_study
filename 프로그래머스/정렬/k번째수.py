@@ -1,3 +1,4 @@
+# 2022-01-10
 # 선택정렬
 def sorting(array, start, end, find):
     new_array = array[start - 1 : end]
