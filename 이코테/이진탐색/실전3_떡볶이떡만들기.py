@@ -67,6 +67,7 @@ print(answer)
 #     answer = result
 # else:  # 리스트가 돌아온 경우
 #     answer = 0
+#     # 심지어 이렇게 해주면 이진탐색한 보람이 싹 사라지게 for문으로 순차탐색을 한다...^^
 #     for i in range(result[0], result[1]):
 #         cutted = sum((j - i) if (j - i) >= 0 else 0 for j in data)
 #         answer = i
