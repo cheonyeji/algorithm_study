@@ -4,6 +4,8 @@
 # 아예 점화식 자체를 접근을 못했고, 불필요하게 수들을 더하고 뺐다
 # 앞에서부터 차근차근 봤어야 했는데 또 차근차근을 못했다.... 끙
 
+# https://www.acmicpc.net/problem/2294
+
 n, m = map(int, input().split())
 money = [int(input()) for _ in range(n)]
 
