@@ -32,18 +32,16 @@ def cut_str(s, num):
 
 
 def solution(s):
-    answer = 0
     result = [INF] * (len(s) + 1)
 
     # 문자열 길이가 1일때 for문을 안 돌아서 예외처리
     if len(s) == 1:
         result[1] = 1
 
-    for i in range(1, len(s)):
+    for i in range(1, len(s)) // 2 + 1:  # N/2까지의 모든 수만 살펴보면 됨
         result[i] = cut_str(s, i)
 
-    answer = min(result)
-    return answer
+    return min(result)
 
 
 """
