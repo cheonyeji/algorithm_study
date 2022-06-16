@@ -24,3 +24,14 @@ while m_cnt < m:
         m_cnt += 1
 
 print(answer)
+
+# M의 입력값이 100억 이상일 때, 시간초과를 방지하려면 -> 수열의 규칙 찾기
+count = 0
+count += int(m / (k + 1)) * k
+count += m * (k + 1)
+
+answer = 0
+answer += count * num_list[0]
+answer += (m - count) * num_list[1]
+
+print(answer)
