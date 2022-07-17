@@ -6,29 +6,17 @@
 
 def solution(s):
     answer = -1
+    stack = []
 
-    leng = len(s)
+    for c in s:
+        if len(stack) != 0 and stack[-1] == c:
+            stack.pop()
+        else:
+            stack.append(c)
 
-    while True:
-        # 모두 다 제거된 경우
-        if s == "":
-            return 1
-
-        # 한글자만 남은 경우
-        if len(s) < 2:
-            break
-
-        # a~z
-        for i in range(97, 123):
-            s = s.replace(chr(i) * 2, "")
-
-        # 한번도 안 바뀐 경우
-        if leng == len(s):
-            break
-
-    if len(s) != 0:
-        answer = 0
+    if len(stack) != 0:
+        return 0
     else:
-        answer = 1
+        return 1
 
     return answer
