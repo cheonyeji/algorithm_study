@@ -2,19 +2,19 @@
 # 프로그래머스 Lv2 - 주식가격
 # https://school.programmers.co.kr/learn/courses/30/lessons/42584
 
+from collections import deque
 
-# 효울성0점코드
+
 def solution(prices):
+    queue = deque(prices)
     answer = []
 
-    for i in range(len(prices)):
+    while queue:
+        price = queue.popleft()
         cnt = 0
-        for j in prices[i + 1 :]:
-            if j < prices[i]:
-                cnt += 1
+        for j in queue:
+            cnt += 1
+            if j < price:
                 break
-            else:
-                cnt += 1
-
         answer.append(cnt)
     return answer
