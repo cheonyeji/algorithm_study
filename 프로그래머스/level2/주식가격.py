@@ -19,3 +19,16 @@ def solution(prices):
                 break
         answer.append(cnt)
     return answer
+
+
+# 효율성은 떨어지지만 예전에 안 돌아가던 코드 돌아가게 수정
+def solution(prices):
+    answer = []
+    for i in range(len(prices)):
+        cnt = 0
+        for j in range(i + 1, len(prices)):
+            cnt += 1
+            if prices[j] < prices[i]:
+                break
+        answer.append(cnt)
+    return answer
