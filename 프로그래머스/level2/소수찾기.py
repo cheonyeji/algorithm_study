@@ -16,6 +16,20 @@ def checkPrimeNum(num):
     return True
 
 
+# 소수 판별 (개선된 알고리즘)
+import math
+
+
+def isPrimeNumber(num):
+    # 2부터 num의 제곱근까지의 모든 수를 확인하기
+    # 제곱근을 구하는 방법은 math.sqrt() 사용. 반환형은 float
+    # 음수의 제곱근을 구하게 되면 error 발생하니 유의
+    for i in range(2, int(math.sqrt(num)) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+
 def solution(numbers):
     answer = 0
     num_arr = []
