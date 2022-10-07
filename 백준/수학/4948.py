@@ -1,7 +1,7 @@
 # 2022-10-07
 # week1. 수학
 # https://www.acmicpc.net/problem/4948
-# 소요시간 : 18:34 ~
+# 소요시간 : 18:34 ~ 19:01 (30m)
 
 import math
 
