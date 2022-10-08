@@ -1,7 +1,7 @@
 # 2022-10-08
 # week1 - 수학. 골드바흐의 추측
 # https://www.acmicpc.net/problem/9020
-# 소요시간 : 16:06 ~ : (m)
+# 소요시간 : 16:06 ~ 17:30 (70m)
 
 import math
 
@@ -17,6 +17,9 @@ def getPrimeNums(n):
     return [i for i in range(n) if erato[i] == True]
 
 
+# 무작정 순회하면 안됨
+# 중간에 제일 가까운 수일수록 정답임
+# 따라서 중간이나 중간보다 작은 수부터 살펴보고 정답 나오면 바로 return
 def getGoldP(target, nums):
     tmp = 0
     for i in range(len(nums)):
