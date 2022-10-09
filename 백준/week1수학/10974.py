@@ -1,7 +1,7 @@
 # 2022-10-09
 # week1 - 수학. 모든 순열
 # https://www.acmicpc.net/problem/10947
-# 소요시간 : 13:29~ : (m)
+# 소요시간 : 13:29~ 13:31 (2m)
 
 from itertools import permutations
 
