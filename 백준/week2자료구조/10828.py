@@ -1,7 +1,7 @@
 # 2022-10-10
 # week2 - 자료구조. 스택
 # https://www.acmicpc.net/problem/10828
-# 소요시간 : 23:51 ~ : (m)
+# 소요시간 : 23:51 ~ 00:04 (15m)
 
 import sys
 
