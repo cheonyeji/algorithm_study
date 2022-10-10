@@ -29,8 +29,15 @@ while i <= (answer ** (1 / 2)) + 1:
             answer_list.append(answer // i)
     i += 1
 
-# 약수 구하는 for문 (시간초과)
+# 약수 구하는 for문 (시간초과 -> 연산자 우선순위 때문에^^)
 # for i in range(2, int(answer ** 1/2)+1):
+#     if answer % i == 0:
+#         answer_list.append(i)
+#         if i != (answer // i):
+#             answer_list.append(answer//i)
+
+# 약수 구하는 for문 (통과)
+# for i in range(2, int(answer ** (1/2))+1):
 #     if answer % i == 0:
 #         answer_list.append(i)
 #         if i != (answer // i):
