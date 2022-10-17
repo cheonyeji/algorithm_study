@@ -1,6 +1,6 @@
 # 2022-10-17
-# week3 - 재귀함수와 정렬.
-# https://www.acmicpc.net/problem/
+# week3 - 재귀함수와 정렬. 수 정렬하기
+# https://www.acmicpc.net/problem/2750
 # 소요시간 : 16:42 ~ 16:43 (1m)
 
 import sys
