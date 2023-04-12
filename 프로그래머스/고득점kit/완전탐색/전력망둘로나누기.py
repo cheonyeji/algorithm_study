@@ -4,7 +4,6 @@
 # 소요 시간 : 11:00 ~ 12:00 (60m)
 
 from collections import deque
-from itertools import combinations
 
 
 def bfs(start, visited, graph, queue):
@@ -31,10 +30,10 @@ def solution(n, wires):
         graph[conn[0]].append(conn[1])
         graph[conn[1]].append(conn[0])
 
-    for case in list(combinations(wires, 1)):
+    for case in wires:
         visited = [False] * (n + 1)
-        graph[case[0][0]].remove(case[0][1])
-        graph[case[0][1]].remove(case[0][0])
+        graph[case[0]].remove(case[1])
+        graph[case[1]].remove(case[0])
 
         num_of_conn_nodes = []
         for i in range(1, n + 1):
@@ -44,8 +43,8 @@ def solution(n, wires):
                 num_of_conn_nodes.append(bfs(i, visited, graph, queue))
         answer = min(answer, abs(num_of_conn_nodes[0] - num_of_conn_nodes[1]))
 
-        graph[case[0][0]].append(case[0][1])
-        graph[case[0][1]].append(case[0][0])
+        graph[case[0]].append(case[1])
+        graph[case[1]].append(case[0])
 
     return answer
 
