@@ -1,5 +1,5 @@
 # 2023-04-18
-# 백준 - DFS/BFS
+# 백준 2178 - DFS/BFS
 # https://www.acmicpc.net/problem/2178
 # 소요 시간 : 15:51 ~ 16:32 (40m)
 
