@@ -3,6 +3,11 @@
 # https://www.acmicpc.net/problem/1182
 # 소요 시간 : 16:40 ~ 17:10 (30m)
 
+"""
+dfs 함수에 시작한 인덱스를 넘겨주지 않으면 중복허용하는 수열을 생성하게 됨
+따라서 시작 인덱스 값을 넘겨줘서 시작인덱스 이전의 데이터는 살펴보지 않도록 해야 조합을 구할 수 있음
+"""
+
 from sys import stdin
 
 input = stdin.readline
