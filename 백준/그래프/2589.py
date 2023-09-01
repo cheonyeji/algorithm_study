@@ -1,4 +1,4 @@
-# 2023-09-01 (소요시간 : 30m pypy로 통과)
+# 2023-09-01 (소요시간 : 30m pypy로 통과해서 파이썬 코드로 수정)
 # 그래프 [골드5. 백준 2589 보물섬] (https://www.acmicpc.net/problem/2589)
 
 from sys import stdin
@@ -37,6 +37,7 @@ answer = -int(1e9)
 for r in range(ROW):
     for c in range(COL):
         if graph[r][c] == "L":
+            # 이 부분 코드 추가해야 통과됨
             # 위아래가 육지라면
             if 0 <= r - 1 < ROW and 0 <= r + 1 < ROW:
                 if graph[r - 1][c] == "L" and graph[r + 1][c] == "L":
