@@ -32,7 +32,6 @@ while cnt < size:
     num += 1
     r += dr[3]
     c += dc[3]
-    # check를 직접 보지 말것...............
     if r1 <= r <= r2 and c1 <= c <= c2:
         pos[(r, c)] = num
     # 위로 cnt번
